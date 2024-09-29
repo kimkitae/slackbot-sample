@@ -3,10 +3,8 @@ import asyncio
 from slack_bolt.async_app import AsyncApp
 from slack_bolt.adapter.socket_mode.aiohttp import AsyncSocketModeHandler
 
-
 # 비동기 Slack 앱
 app = AsyncApp(token=os.getenv("SLACK_BOT_TOKEN"))
-
 
 # 'app_mention' 이벤트를 처리하는 비동기 핸들러
 @app.event("app_mention")
