@@ -1,0 +1,9 @@
+version: '3'
+services:
+  slackbot:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - SLACK_BOT_TOKEN=xoxb...
+      - APP_TOKEN=xapp-1-...

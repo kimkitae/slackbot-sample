@@ -1,11 +1,8 @@
 import os
 import asyncio
-from dotenv import load_dotenv
 from slack_bolt.async_app import AsyncApp
 from slack_bolt.adapter.socket_mode.aiohttp import AsyncSocketModeHandler
 
-# 환경 변수 로드
-load_dotenv()
 
 # 비동기 Slack 앱
 app = AsyncApp(token=os.getenv("SLACK_BOT_TOKEN"))
